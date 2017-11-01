@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.knowarth.security.service.impl.SecureLoginLocalServiceImpl" id="com.knowarth.security.service.SecureLoginLocalService" />
+	<bean class="com.knowarth.security.service.persistence.impl.SecureLoginPersistenceImpl" id="com.knowarth.security.service.persistence.SecureLoginPersistence" parent="basePersistence" />
+	<bean class="com.knowarth.security.service.persistence.impl.SecureLoginFinderImpl" id="com.knowarth.security.service.persistence.SecureLoginFinder" parent="basePersistence" />
+</beans>

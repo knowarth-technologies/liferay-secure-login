@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.knowarth.security">
+	<namespace>SLS</namespace>
+	
+	<entity name="SecureLogin" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="secureLoginId" type="long" primary="true" />
+		<column name="userId" type="long" />
+		<column name="registrationKey" type="String" />
+		<column name="encodeToken" type="String" />
+		<column name="encodeTokenDate" type="Date" />
+		<column name="qrCodeToken" type="String" />
+		<column name="qrCodeTokenDate" type="Date" />
+		<column name="tokenValidated" type="String" />
+		
+		<finder return-type="SecureLogin" name="SecureLoginByUserId">
+			<finder-column name="userId"></finder-column>
+		</finder>
+		
+		<finder return-type="SecureLogin" name="RegistrationKey">
+			<finder-column name="registrationKey"></finder-column>
+		</finder>
+		
+		<reference package-path="com.liferay.portal" entity="User"/>
+	</entity>
+</service-builder>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.knowarth.security.model.SecureLogin">
+		<field name="secureLoginId" type="long" />
+		<field name="userId" type="long" />
+		<field name="registrationKey" type="String" />
+		<field name="encodeToken" type="String" />
+		<field name="encodeTokenDate" type="Date" />
+		<field name="qrCodeToken" type="String" />
+		<field name="qrCodeTokenDate" type="Date" />
+		<field name="tokenValidated" type="String" />
+	</model>
+</model-hints>

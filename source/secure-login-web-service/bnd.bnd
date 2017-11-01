@@ -1,0 +1,12 @@
+Bundle-Name: secure-login-web-service
+Bundle-SymbolicName: com.knowarth.web.service
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration
+Include-Resource:@gson-2.8.1.jar
+
+Bundle-ClassPath:\
+.,\
+lib/commons-codec.jar,\
+-includeresource:\
+lib/commons-codec.jar=commons-codec-1.9.jar,
+lib/secure.login.service-api-1.0.0.jar

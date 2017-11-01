@@ -1,0 +1,9 @@
+Bundle-Name: secure-login-device-registration
+Bundle-SymbolicName: com.knowarth.device.registration
+Bundle-Version: 1.0.0
+Export-Package: com.knowarth.security.constants
+Bundle-ClassPath:\
+.,\
+lib/core.jar
+-includeresource:\
+lib/core.jar=core-3.3.0.jar

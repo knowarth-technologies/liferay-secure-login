@@ -1,0 +1,7 @@
+Bundle-SymbolicName: secure.login.service-api
+Bundle-Version: 1.0.0
+Export-Package: \
+	com.knowarth.security.exception,\
+	com.knowarth.security.model,\
+	com.knowarth.security.service,\
+	com.knowarth.security.service.persistence
